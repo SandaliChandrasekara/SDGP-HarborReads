@@ -28,7 +28,7 @@ function Challenges({username}) {
     setShowQuotes(true);
   
     try {
-      const response = await fetch('http://localhost:3001/insight/setWTRBooks', {
+      const response = await fetch('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/insight/setWTRBooks', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -15,7 +15,7 @@ function EditProfile({ currentSession }) {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const response = await fetch("http://localhost:3001/profile/edit-profile-info", {
+        const response = await fetch("https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/profile/edit-profile-info", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -43,7 +43,7 @@ function EditProfile({ currentSession }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3001/profile/edit-profile", {
+      const response = await fetch("https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/profile/edit-profile", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

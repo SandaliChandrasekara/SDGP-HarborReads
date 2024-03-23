@@ -55,7 +55,7 @@ function ChatBot({ userName }) {
     // Send a POST request for the first message
     if (messages.length === 0 && chatType !== null) {
       try {
-        const res = await fetch(`http://localhost:3001/chat/${chatType}/startConversation`, {
+        const res = await fetch(`https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/chat/${chatType}/startConversation`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -74,7 +74,7 @@ function ChatBot({ userName }) {
     } else {
       // Send a POST request for each subsequent message
       try {
-        const res = await fetch(`http://localhost:3001/chat/${chatType}/generateResponse`, {
+        const res = await fetch(`https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/chat/${chatType}/generateResponse`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -164,7 +164,7 @@ function ChatBot({ userName }) {
 
   const fetchRecommendation = async () => {
     try {
-      const recommendationRes = await fetch('http://localhost:3001/chat/avidReadersChat/generateRecommendation', {
+      const recommendationRes = await fetch('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/chat/avidReadersChat/generateRecommendation', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -187,7 +187,7 @@ function ChatBot({ userName }) {
     try {
       const userMessages = messages.filter(message => message.from === 'user');
 
-      const recommendationRes = await fetch('http://localhost:3001/rec/newUserRec', {
+      const recommendationRes = await fetch('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/rec/newUserRec', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

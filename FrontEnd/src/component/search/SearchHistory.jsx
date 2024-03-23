@@ -12,7 +12,7 @@ function SearchHistory({currentSession}) {
 
   useEffect(() => {
     // Fetch search history data from the server
-    fetch('http://localhost:3001/books/search/history', {
+    fetch('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/books/search/history', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

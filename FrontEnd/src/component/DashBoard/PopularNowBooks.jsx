@@ -11,7 +11,7 @@ function PopularBooksList() {
   useEffect(() => {
     setIsLoading(true);
     // Fetch popular books data from the server
-    fetch('http://localhost:3001/books/popular/highly-rated-books', {
+    fetch('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/books/popular/highly-rated-books', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'

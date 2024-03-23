@@ -16,7 +16,7 @@ function Personallib({ currentSession, username }) {
   }, []);
 
   const fetchUserShelves = () => {
-    fetch(`http://localhost:3001/library/shelves`, {
+    fetch(`https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/library/shelves`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ function Personallib({ currentSession, username }) {
 
   const handleAddShelf = () => {
     if (shelfName.trim() !== '') {
-      fetch(`http://localhost:3001/library/addShelf`, {
+      fetch(`https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/library/addShelf`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ function Personallib({ currentSession, username }) {
 
   const handleRemoveShelf = (index) => {
     const shelfId = shelves[index]._id;
-    fetch(`http://localhost:3001/library/removeShelf`, {
+    fetch(`https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/library/removeShelf`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

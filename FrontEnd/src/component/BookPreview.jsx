@@ -24,7 +24,7 @@ function BookPreview({ goBack, currentSession }) {
   };
 
   const fetchUserShelves = () => {
-    fetch(`http://localhost:3001/library/shelves`, {
+    fetch(`https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/library/shelves`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -55,7 +55,7 @@ function BookPreview({ goBack, currentSession }) {
   };
 
   const fetchBookDetails = () => {
-    fetch('http://localhost:3001/books/search/preview', {
+    fetch('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/books/search/preview', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -80,7 +80,7 @@ function BookPreview({ goBack, currentSession }) {
 
   const handleAddToShelf = () => {
     if (selectedShelf) {
-      fetch('http://localhost:3001/library/addBookToShelf', {
+      fetch('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/library/addBookToShelf', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

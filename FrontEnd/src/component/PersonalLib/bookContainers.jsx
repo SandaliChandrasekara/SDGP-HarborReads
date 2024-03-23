@@ -7,7 +7,7 @@ function BookInfo({ bookId, shelf, userId, setShelves, username }) {
   const [selectedState, setSelectedState] = useState('wantToRead');
 
   useEffect(() => {
-    fetch(`http://localhost:3001/library/book/${bookId}`)
+    fetch(`https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/library/book/${bookId}`)
       .then(response => response.json())
       .then(details => {
         setBookDetails(details);
@@ -27,7 +27,7 @@ function BookInfo({ bookId, shelf, userId, setShelves, username }) {
 
 
   const handleRemoveBookFromShelf = (shelfIndex, bookToRemoveId) => {
-    fetch(`http://localhost:3001/library/removeBookFromShelf`, {
+    fetch(`https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/library/removeBookFromShelf`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -46,7 +46,7 @@ function BookInfo({ bookId, shelf, userId, setShelves, username }) {
   const handleChangeState = (value) => {
     setShowDropdown(false);
     //onUpdateState(value);
-    fetch(`http://localhost:3001/library/changeStatus`, {
+    fetch(`https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/library/changeStatus`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

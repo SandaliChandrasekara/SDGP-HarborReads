@@ -73,7 +73,7 @@ const Quiz = ({username}) => {
 
   const submitScore =  () => {
     try {
-       axios.post('http://localhost:3001/leaderboard/setLeaderboardScore', {
+       axios.post('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/leaderboard/setLeaderboardScore', {
         username: username,
         score: ((score / 10) * 100).toFixed(2)
       });

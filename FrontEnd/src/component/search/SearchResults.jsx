@@ -13,7 +13,7 @@ function SearchResults({ searchTerm,currentSession }) {
   useEffect(() => {
     setIsLoading(true);
     // Fetch search results data from the server
-    fetch('http://localhost:3001/books/search/query', {
+    fetch('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/books/search/query', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

@@ -9,7 +9,7 @@ const Leaderboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/leaderboard/getLeaderboard');
+        const response = await axios.get('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/leaderboard/getLeaderboard');
         setUsers(response.data);
       } catch (error) {
         console.error('Failed to fetch leaderboard:', error);

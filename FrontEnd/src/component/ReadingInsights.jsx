@@ -53,7 +53,7 @@ const ReadingInsights = ({ username }) => {
   useEffect(() => {
     const fetchNumberOfReadBooks = async () => {
       try {
-        const response = await fetch('http://localhost:3001/insight/getNoOfReadBooks', {
+        const response = await fetch('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/insight/getNoOfReadBooks', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -69,7 +69,7 @@ const ReadingInsights = ({ username }) => {
 
     const fetchWantToReadBooks = async () => {
       try {
-        const response = await fetch('http://localhost:3001/insight/getWTRBooks', {
+        const response = await fetch('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/insight/getWTRBooks', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
