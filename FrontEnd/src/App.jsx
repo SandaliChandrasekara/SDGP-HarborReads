@@ -41,7 +41,7 @@ const App = () => {
 
   const handleSignIn = async (username, password) => {
     try {
-      const response = await fetch('https://ci-cd-be-2p3mwzqeaq-uc.a.run.app/auth/signin', {
+      const response = await fetch('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/auth/signin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ const App = () => {
 
   const handleSignUp = async (username, email,password) => {
     try {
-      const response = await fetch('https://ci-cd-be-2p3mwzqeaq-uc.a.run.app/auth/signup', {
+      const response = await fetch('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/auth/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -100,7 +100,7 @@ const App = () => {
   // Accessing user data
 const getUserData = async () => {
   try {
-    const response = await fetch('https://ci-cd-be-2p3mwzqeaq-uc.a.run.app/user/username', {
+    const response = await fetch('https://harborreads-web-backend-y3b57u45qa-uc.a.run.app/user/username', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
