@@ -7,8 +7,7 @@
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "start": "npm run dev",
-    "preview": "vite preview",
-    "test": "jest --config jest.config.cjs"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
