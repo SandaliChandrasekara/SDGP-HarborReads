@@ -45,7 +45,6 @@ app.use(session({
 }));
 
 
-
 // Mounting authentication routes at /auth base URL
 app.use('/auth', authRoutes);
 
